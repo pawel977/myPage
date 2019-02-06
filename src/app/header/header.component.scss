@@ -1,0 +1,28 @@
+#nameHolder {
+    text-align: center;
+    opacity: 0;
+    animation: nameHolderInitAnimation 1.1s  forwards;
+}
+
+
+
+@keyframes nameHolderInitAnimation{
+   25%{
+       opacity: 0.5;
+   }50%{
+       opacity: 0.6;
+    }65%{
+        opacity: 0.8;
+        transform: translateY(125%);
+    }100%{
+        transform: translateY(100%);
+
+    }
+    from{
+    }to{
+        opacity: 1;
+        font-weight: 100;
+    }
+
+
+}

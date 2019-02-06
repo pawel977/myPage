@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+//reset
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+$bodyHeight: 100vh;
+$bodyWidth: 100vw;
+
+app-root {
+  height: $bodyHeight;
+  width: $bodyWidth;
+  display: flex;
+  flex-direction: column;
+}
+
+$headerHight: 70%;
+$headerWidth: 100%;
+
+app-header {
+  height: $headerHight;
+  width: $headerWidth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+$mainHeight: calc($bodyHeight - $headerHight);
+$mainWidth: 100%;
+
+app-main {
+  height: $mainHeight;
+  width: $mainWidth;
+}
+
+
+//animations
