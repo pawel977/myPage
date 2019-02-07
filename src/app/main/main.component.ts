@@ -1,4 +1,4 @@
-import { Component, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -6,15 +6,12 @@ import { Component, OnInit, SimpleChanges } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit{
- private isClickedButton = false;
+ private isClickedButton = true;
   constructor() { }
 
   ngOnInit() {
   }
   
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes)
-  }
 
   clicked(){
     this.isClickedButton = true;

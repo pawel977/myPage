@@ -8,12 +8,25 @@
   padding: 0;
 }
 
+h1, h2 {
+    font-weight: 100;
+}
+h1{
+    font-size: 7vmax;
+}
+h2{
+    font-size: 4vmax;
+}
 button {
 
   &:active,
   &:focus {
     outline: none;
   }
+}
+
+ul {
+  list-style: none;
 }
 
 $bodyHeight: 100vh;
@@ -26,8 +39,9 @@ app-root {
   flex-direction: column;
 }
 
-$headerHight: 70%;
-$headerWidth: 100%;
+
+$headerHight: 70vh;
+$headerWidth: 100vw;
 
 app-header {
   height: $headerHight;
@@ -36,9 +50,10 @@ app-header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
-$mainHeight: calc($bodyHeight - $headerHight);
+$mainHeight: 30vh;
 $mainWidth: 100%;
 
 app-main {
