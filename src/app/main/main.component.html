@@ -2,14 +2,7 @@
   <button *ngIf="!isClicked(); else afterClickContent" (click)="clicked()"><span>ENTER</span></button>
   
   <ng-template #afterClickContent>
-    <nav>
-     <ul>
-       <li>Technologie</li>
-       <li>Kursy</li>
-       <li>Portfolio</li>
-       <li>Kontakt</li>
-     </ul>
-    </nav>
+ <app-nav-main></app-nav-main>
   </ng-template>
 
 </main>

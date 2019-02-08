@@ -59,7 +59,7 @@ app-root {
 }
 
 
-$headerHight: 70vh;
+$headerHight: 60vh;
 $headerWidth: 100vw;
 
 app-header {
@@ -72,7 +72,7 @@ app-header {
 
 }
 
-$mainHeight: 30vh;
+$mainHeight: calc(100vh - 60vh);
 $mainWidth: 100%;
 
 app-main {
