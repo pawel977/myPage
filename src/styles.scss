@@ -6,17 +6,35 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h1, h2 {
-    font-weight: 100;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+li {
+  text-shadow: 1px 1px 4px black;
+  color: white;
 }
-h1{
-    font-size: 7vmax;
+
+h1,
+h2 {
+  font-weight: 100;
 }
-h2{
-    font-size: 4vmax;
+
+h1 {
+  font-size: 10vmin;
 }
+
+h2 {
+  font-size: 5vmin;
+}
+
 button {
 
   &:active,
@@ -37,6 +55,7 @@ app-root {
   width: $bodyWidth;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(to bottom right, rgb(43, 223, 223), rgb(23, 123, 216));
 }
 
 
