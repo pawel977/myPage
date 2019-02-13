@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EntryChoiceService } from './entry-choice.service';
+import { EntryClickService } from './entry-click.service';
 
-describe('EntryChoiceService', () => {
+describe('EntryClickService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: EntryChoiceService = TestBed.get(EntryChoiceService);
+    const service: EntryClickService = TestBed.get(EntryClickService);
     expect(service).toBeTruthy();
   });
 });

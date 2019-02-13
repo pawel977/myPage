@@ -1,2 +1,12 @@
-<app-header></app-header>
-<app-main></app-main>
+<div class="containerMain">
+<main *ngIf="isHello(); else afterEntryContent">
+<app-entry-component></app-entry-component>
+</main>
+
+<ng-template #afterEntryContent>
+    <app-main-nav></app-main-nav>
+    <main>
+    <app-routing-box></app-routing-box>
+  </main>
+</ng-template>
+</div>

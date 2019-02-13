@@ -1,12 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-//reset
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h1,
@@ -16,69 +14,28 @@ h4,
 h5,
 h6,
 span,
+button,
 p,
 li {
-  text-shadow: 1px 1px 4px black;
+  text-shadow: 1px 1px 2px black;
   color: white;
 }
 
-h1,
-h2 {
-  font-weight: 100;
-}
 
-h1 {
-  font-size: 10vmin;
-}
 
-h2 {
-  font-size: 5vmin;
+
+nav {
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
 }
 
 button {
+  background: none;
+  border: none;
 
   &:active,
   &:focus {
     outline: none;
   }
 }
-
-ul {
-  list-style: none;
-}
-
-$bodyHeight: 100vh;
-$bodyWidth: 100vw;
-
-app-root {
-  height: $bodyHeight;
-  width: $bodyWidth;
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(to bottom right, rgb(43, 223, 223), rgb(23, 123, 216));
-}
-
-
-$headerHight: 60vh;
-$headerWidth: 100vw;
-
-app-header {
-  height: $headerHight;
-  width: $headerWidth;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-$mainHeight: calc(100vh - 60vh);
-$mainWidth: 100%;
-
-app-main {
-  height: $mainHeight;
-  width: $mainWidth;
-}
-
-
-//animations
