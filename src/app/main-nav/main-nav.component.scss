@@ -7,7 +7,10 @@
 }
 nav{
   position: relative;
+  display: block;
+  z-index: 1;
   background-image: linear-gradient(to bottom right ,#a09f9fa2, #00000091);
+
 }
 
 ul {
@@ -31,8 +34,11 @@ li {
   cursor: pointer;
   text-align: center;
 
-  transition: all 0.3s;
-
+  transition: all 0.2s;
+  &:active,
+  &:focus {
+    outline: none;
+  }
   &:hover {
     font-size: 5vmin;
     border-bottom: 2px dotted white;
