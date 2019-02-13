@@ -1,35 +1,65 @@
+@mixin initNav {
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation: imgInit .35s #{$i * .1}s ease-in forwards;
+    }
+  }
+}
+h3{
+    opacity: 0;
+    animation: imgInit .7s ease-in forwards;
+}
+
+ul {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  padding: 10px 0;
+
+}
+
 li {
-    width: 50px;
+  opacity: 0;
+  @include initNav;
 }
-ul{
-    display: flex;
-    //flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    align-items: space-evenly;
-    justify-content: space-evenly;
+
+section {
+  margin: 15px 0;
 }
-section{
-    height: 60vh;
+
+h3 {
+  text-align: left;
+  padding-left: 10%;
 }
 
 .rootContext {
   display: flex;
 }
 
+img {
+  width: 28vmin;
+  height: 28vmin;
+  border-radius: 50%;
+  border: 2px rgba(233, 10, 10, 0.534) solid;
+  background: white center top;
+  padding: 5px;
+  margin-top: 20px;
+}
+
 
 @media (orientation:portrait) {
   .rootContext {
     flex-direction: column;
-    align-items: center;
+    align-items: space-evenly;
     justify-content: space-evenly;
   }
 
-  img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    border: 2px white solid;
+}
 
+@keyframes imgInit {
+  to {
+    opacity: 1;
   }
 }

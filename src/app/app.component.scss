@@ -1,13 +1,12 @@
 .containerMain {
-  background: url(/src/background/bgMainImg.jpg) center center no-repeat;
-  background-size: cover;
-  width: 100vw;
+ // background: url(/src/background/bgMainImg.jpg) center center no-repeat;
+ // background-size: cover;
+ background: #0e0e0e; 
+ width: 100vw;
   min-height: 100vh;
 }
 
 main {
-  height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
