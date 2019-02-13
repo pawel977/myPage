@@ -10,6 +10,7 @@ nav{
   top: 0;
   left: 0;
   z-index: 1;
+  background-image: linear-gradient(to bottom right ,#a09f9fa2, #00000091);
 }
 
 ul {
@@ -21,16 +22,6 @@ ul {
   text-align: center;
   justify-content: space-evenly;
   list-style: none;
-}
-#navBackgroun{
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.6;
-  z-index: -1;
-  position: absolute;
-  border-radius: 0 0 15% 15%;
-  border-bottom: 1px solid ;
 }
 
 li {

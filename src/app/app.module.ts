@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
@@ -10,6 +11,7 @@ import { TechRootComponent } from './roots/tech-root/tech-root.component';
 import { PortfolioComponent } from './roots/portfolio/portfolio.component';
 import { CvComponent } from './roots/cv/cv.component';
 import { KontaktComponent } from './roots/kontakt/kontakt.component';
+import { HomeComponent } from './roots/home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +23,18 @@ import { KontaktComponent } from './roots/kontakt/kontakt.component';
     PortfolioComponent,
     CvComponent,
     KontaktComponent,
+    HomeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      {path: 'techs', component: TechRootComponent},
+      {path: 'portfolio', component: PortfolioComponent},
+      {path: 'cv', component: CvComponent},
+      {path: 'contackt', component: KontaktComponent}
+    ])
+
   ],
   providers: [EntryClickService],
   bootstrap: [AppComponent]
