@@ -1,3 +1,13 @@
-<p>
-  kontakt works!
-</p>
+<div class="container">
+  <ul>
+    <li  *ngFor='let i of techs' >
+      <div  class="itemContainer" >
+          <img  [src]="i.imgSrc" [alt]="i.imgAlt">
+        <section>
+            
+          <p>{{i.descripcion}}</p>
+        </section>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,3 +1,4 @@
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -33,7 +34,8 @@ import { HomeComponent } from './roots/home/home.component';
       {path: 'portfolio', component: PortfolioComponent},
       {path: 'cv', component: CvComponent},
       {path: 'contackt', component: KontaktComponent}
-    ])
+    ]),
+    BrowserAnimationsModule
 
   ],
   providers: [EntryClickService],
